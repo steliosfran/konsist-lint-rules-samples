@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Konsist Lint Rules Samples</string>
+    <string name="main_content_1">This sample Android application demonstrates how to write lint rules that enforce your team\'s architectural standards and best practices, in the form of unit tests, using Konsist.</string>
+    <string name="main_content_2">Navigate to the \"konsist\" module in the project to explore the lint rules.</string>
+    <string name="main_content_3">Enforce them in your CI/CD pipeline using the GitHub Action located under \".github/workflows\".</string>
+    <string name="main_content_4">For a comprehensive guide on setup and best practices with Konsist, please refer to the blog post: \"Stop Debating in Code Reviews. Start Enforcing with Lint Rules.\" or check the official Konsist documentation.</string>
+</resources>
