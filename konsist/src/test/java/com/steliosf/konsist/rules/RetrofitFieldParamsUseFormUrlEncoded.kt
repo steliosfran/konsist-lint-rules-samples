@@ -13,13 +13,13 @@ class RetrofitFieldParamsUseFormUrlEncoded : BehaviorSpec() {
 
     init {
         Given("All functions in production code") {
-            val scope = Konsist.scopeFromProduction().functions()
+            val functions = Konsist.scopeFromProduction().functions()
 
             When("There is a function with the @POST annotation") {
-                val functions = scope.withAnnotationNamed("POST")
+                val functionsWithPost = functions.withAnnotationNamed("POST")
 
                 And("It has at least one @Field parameter") {
-                    val functionsWithFieldParams = functions.withParameter {
+                    val functionsWithFieldParams = functionsWithPost.withParameter {
                         it.hasAnnotationWithName("Field")
                     }
 
