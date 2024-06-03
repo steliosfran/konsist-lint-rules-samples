@@ -20,7 +20,7 @@ class ViewModelsDoNotAccessResources : BehaviorSpec() {
 
                 Then("It does not access resources") {
                     viewModels.imports.assertFalse {
-                        it.hasNameStartingWith("com.steliosf.resources")
+                        it.hasNameStartingWith("com.steliosf.konsist.samples.R")
                     }
                 }
             }
